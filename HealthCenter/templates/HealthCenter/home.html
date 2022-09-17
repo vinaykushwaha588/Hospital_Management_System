@@ -1,0 +1,58 @@
+{% extends 'HealthCenter/base.html' %}
+{% load static %}
+{% block title %} HOME {% endblock title %}
+
+{% block body %}
+
+     <!-- HOME -->
+     <section id="home" class="slider" data-stellar-background-ratio="0.5">
+        <div class="container">
+             <div class="row">
+
+                       <div class="owl-carousel owl-theme">
+                            <div class="item item-first">
+                                 <div class="caption">
+                                      <div class="col-md-offset-1 col-md-10">
+                                           <h3>Let's make your life happier</h3>
+                                           <h1>Healthy Living</h1>
+                                           <a href="{% url 'doctor' %}" class="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
+                                      </div>
+                                 </div>
+                            </div>
+
+                            <div class="item item-second">
+                                 <div class="caption">
+                                      <div class="col-md-offset-1 col-md-10">
+                                           <h3>Aenean luctus lobortis tellus</h3>
+                                           <h1>New Lifestyle</h1>
+                                           <a href="{% url 'about' %}" class="section-btn btn btn-default btn-gray smoothScroll">More About Us</a>
+                                      </div>
+                                 </div>
+                            </div>
+
+                            <div class="item item-third">
+                                 <div class="caption">
+                                      <div class="col-md-offset-1 col-md-10">
+                                           <h3>Pellentesque nec libero nisi</h3>
+                                           <h1>Your Health Benefits</h1>
+                                           <a href="{% url 'news' %}" class="section-btn btn btn-default btn-blue smoothScroll">Read Stories</a>
+                                      </div>
+                                 </div>
+                            </div>
+                       </div>
+             </div>
+        </div>
+   </section>
+
+
+<p>
+    Hospital management system is a computer system that helps manage the information related to health care and aids in the job completion of health care providers effectively. They manage the data related to all departments of healthcare such as, Clinical. Financial. Laboratory.
+    HMS was introduced to solve the complications coming from managing all the paper works of every patient associated with the various departments of hospitalization with confidentiality. HMS provides the ability to manage all the paperwork in one place, reducing the work of staff in arranging and analyzing the paperwork of the patients
+</p>
+<p>
+    <img src="{% static 'HealthCenter/images/hms.png' %}">
+</p>
+<p>
+    HMS came into the picture of hospital management as early as 1960 and have ever since been evolving and synchronizing with the technologies while modernizing healthcare facilities. In today’s world, the management of healthcare starts from the hands of the patients through their mobile phones and facilitates the needs of the patient.
+</p>
+{% endblock body %}
